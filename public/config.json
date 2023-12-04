@@ -12,61 +12,6 @@
            "TwilioMessage":"test"
        }
     },
-    "arguments": {
-        "execute": {
-            "inArguments": [
-                {
-                  "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
-                }               
-            ],
-            "outArguments": [],
-            "url": "https://customcctivitysendsms-ef537929b838.herokuapp.com/journeybuilder/execute",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 2000
-        }
-    },
-    "configurationArguments": {
-      "applicationExtensionKey": "d77f3cd8-681a-4f78-85af-e99ce4dded0d",
-       "save": {
-           "url": "https://customcctivitysendsms-ef537929b838.herokuapp.com/save",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 2000
-       },
-       "publish": {
-           "url": "https://customcctivitysendsms-ef537929b838.herokuapp.com/publish",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 2000
-       },
-       "validate": {
-           "url": "https://customcctivitysendsms-ef537929b838.herokuapp.com/validate",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 2000
-       },
-       "stop": {
-           "url": "https://customcctivitysendsms-ef537929b838.herokuapp.com/stop",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 2000
-       }
-    },
-    "wizardSteps": [
-       { "label": "Create SMS Message", "key": "step1" }
-    ],
     "userInterfaces": {
        "configModal": {
            "height": 600,
